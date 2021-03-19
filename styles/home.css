@@ -41,12 +41,17 @@
     padding: 5px;
     margin: 5px;
 }
-.navbar>li a{
+a{
+    color: black;
     text-decoration: none;
-    
 }
-.navbar li>a:hover{
-    color: orangered
+
+a:hover{
+    color: orangered;
+}
+
+a:active{
+    color: blue;
 }
 
  .headContent{
@@ -70,14 +75,20 @@
     align-self: center;
     position: relative;
     z-index: 1;
-    border: solid 3px black;
+    border: solid 3px white;
     width: 135px;
     height: 135px;
     border-radius: 150px;
-    box-shadow:20px 20px 10px gray; 
-    object-fit: contain;
+    box-shadow:20px 10px #f1f2e6; 
+    
 }
 
+.headimg img{
+    object-fit: fill;
+    border-radius: 150px;
+    width: 135px;
+    height: 135px;
+}
 .posts{
     position: relative;
     z-index: 0;
@@ -97,14 +108,28 @@
   
 }
 
-.post1 :nth-child(2){
-    width: 350px;
-    height: 230px;
+.post1 .post1-content{
+    width: 270px;
+    height: 220px;
     border-radius: 17px;
     background-color: white;
-    box-shadow:20px 15px 40px rgb(190, 190, 190);  
+    padding-left: 10px;
+   
+}
+.post1-content :nth-child(1){
+    color: #21243D;
+    font-weight: 600;
+    font-size: 18px;
+    width: 374px;
+    height: 85px;
 }
 
+.post1 .post1-content:hover{
+    width: 320px;
+    height: 230px;
+    box-shadow:20px 15px 40px rgb(190, 190, 190);
+    transition: transform.45s;
+}
 .posts .post2{
     justify-self: start;
     align-self: center;
@@ -112,14 +137,22 @@
     
 }
 .post2 :nth-child(1){
-    margin-left: 145px;
+    margin-left: 110px;
 }
-.post2 :nth-child(2){
-    width: 350px;
-    height: 230px;
+.post2 .post2-content{
+    width: 270px;
+    height: 220px;
     border-radius: 17px;
     background-color: white;
+   
+    
+}
+
+.post2 .post2-content:hover{
+    width: 320px;
+    height: 230px;
     box-shadow:20px 15px 40px rgb(190, 190, 190);
+    transition: transform.45s;
 }
 
 .skills{
@@ -166,9 +199,10 @@
     justify-items: center;
     grid-gap: 20px;
     background-color: var(--theme-color);
-    box-shadow:  20px 20px 50px 10px rgb(218, 211, 198) inset;
+    box-shadow:  20px 15px 50px 10px rgb(218, 211, 198) inset;
     border-radius: 10px;
-    padding-bottom: 30px;
+    padding: 30px;
+    
     
 }
 .works h4{
@@ -184,6 +218,10 @@
     height: 200px;
     background-color: white;
     border-radius: 10px;
+}
+.works div:hover{
+    width: 220px;
+    height: 230px;
 }
 .works .column1{
     justify-self: end;

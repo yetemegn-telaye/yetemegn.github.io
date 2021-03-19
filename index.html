@@ -17,10 +17,10 @@
     <div class="container">
         <div class="nav">
                 <ul class="navbar">
-                    <li><a href="#">skills</a></li>
-                    <li><a href="#">works</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#skill">skills</a></li>
+                    <li><a href="#work">works</a></li>
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
         </div>
         
@@ -31,21 +31,28 @@
             <button class="btnCv">Download Resume</button>
         </div>
       
-            <div class="headimg"><img src="images/profile.jpg"/></div>
+            <div class="headimg">
+                <img src="images/profile.jpg"/>
+            </div>
        
         
         <div class="posts">
             <div class="post1">
                 <p><a href="#">Recent Posts</a></p>
-                <div>post1</div>
+                <div class="post1-content">
+                    <p>Making a design system from <br>scratch</p>
+                   
+                </div>
             </div>
             <div class="post2">
                 <p><a href="#"> view all</a></p>
-                <div>post2</div>
+                <div class="post2-content">
+                 post2
+                </div>
             </div>
         </div>
 
-        <div class="skills">
+        <div class="skills" id="skill">
             <h3>Skills</h3>
             <div class="langs">
                <h4>Languages</h4>
@@ -65,7 +72,7 @@
                 </ul>
             </div>
         </div>
-        <div class="works">
+        <div class="works" id="work">
            <h4>Works</h4>
             <div class="column1">
                 work1
@@ -86,7 +93,7 @@
                 work6
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contacts">
             <h4>Contact Me</h4>
             <div>
                 <p> <span class="labels">email: </span></p>
