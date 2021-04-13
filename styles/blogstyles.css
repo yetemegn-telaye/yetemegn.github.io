@@ -1,0 +1,23 @@
+.blogsWrapper{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 17px;
+}
+.blogsWrapper .title{
+    color: rgb(255 192 76);
+    height: 0px;
+}
+
+.blog1 , .blog2, .blog3 , .blog4{
+    
+    padding: 7px;
+    opacity: 0.8;
+    border-bottom: solid 2px wheat;
+    color: white;
+}
+
+.blog1{
+    display: grid;
+}
